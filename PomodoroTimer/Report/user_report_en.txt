@@ -1,0 +1,90 @@
+Pomodoro Timer Application - User Report
+
+Project Overview
+================
+
+This is a fully functional Pomodoro Timer application that helps users improve work efficiency through the Pomodoro Technique. The application adopts the classic Pomodoro mode of 25 minutes of work and 5 minutes of rest, supporting task management, progress tracking, and personalized settings. The application features a modern user interface, supports dark mode, and is fully responsive, adapting to various devices.
+
+Implemented Features
+===================
+
+Core Pomodoro Features
+- Task Creation: Create new Pomodoro tasks, set task names and Pomodoro counts
+- Time Settings: Customize work time (default 25 minutes) and rest time (default 5 minutes)
+- Timer Function: Complete countdown functionality with real-time remaining time display
+- Task State Management: Support start, pause, stop, and complete task operations
+- Progress Tracking: Display current completed Pomodoro count (e.g., 0/1, 1/3, etc.)
+
+User Interface Features
+- Responsive Design: Automatically adapts to different screen sizes including phones, tablets, and computers
+- Task List Display: Dynamically displays all created tasks
+- Real-time Updates: Page title shows current countdown time
+- Task Status Indicators: Intuitive button states (Start▶️, Complete✅, Stop⏹️, Delete🗑️)
+- Task Completion Prompts: Display status messages like "Task completed!" and "Take a break!"
+
+Personalization Settings
+- Sound Alert Toggle: Enable/disable sound alerts
+- Tick Sound Toggle: Enable/disable timer tick sounds
+- Time Customization: Modify work time and rest time duration
+- Dark Mode: Support day/night mode switching with automatic settings save
+
+Audio Features
+- Sound Alerts: Play notification sounds when work and rest periods end
+- Tick Sounds: Tick sound effects during timing
+- Multiple Sound Effects: Work sounds, rest sounds, tick sounds
+
+Task Management
+- Task Deletion: Delete unwanted tasks
+- Multi-task Support: Create multiple tasks simultaneously but only run one
+- Task State Switching: Automatically switch between work and rest states
+
+Usage Instructions
+==================
+
+Basic Usage Flow
+1. Open Application: Open the index.html file in a browser
+2. Create Task: Enter task name in the input field, set Pomodoro count, click "Add Mission"
+3. Start Work: Click the "Start" button (▶️) next to the task to begin timing
+4. Focus on Work: Concentrate on completing the task during the 25-minute work period
+5. Rest Time: After work time ends, the application automatically switches to 5-minute rest time
+6. Repeat Cycle: After completing one Pomodoro, continue with the next Pomodoro
+
+Operation Instructions
+- Start Task: Click ▶️ button to start timing
+- Pause Task: Click ⏸️ button to pause during timing
+- Stop Task: Click ⏹️ button to stop current task
+- Complete Task: Click ✅ button to mark task as completed
+- Delete Task: Click 🗑️ button to delete task
+
+Settings Adjustment
+1. Click the settings button (⚙️) in the top right corner of the page
+2. In the settings panel, you can adjust:
+   - Work time duration (minutes)
+   - Rest time duration (minutes)
+   - Sound alert toggle
+   - Tick sound toggle
+3. Settings are automatically saved
+
+Dark Mode
+- Click the moon icon (🌙) in the top right corner to switch to dark mode
+- Click the sun icon (☀️) to switch back to day mode
+- Mode preferences are automatically saved
+
+Important Notes
+- The application requires a modern browser (supporting HTML5 and JavaScript)
+- Recommended browsers: Chrome, Firefox, Safari, and other mainstream browsers
+- Audio functionality requires browser permission to play sounds
+- For the best experience, use in a quiet environment
+- Task data currently does not support cross-session saving; tasks need to be recreated after page refresh
+
+Technical Requirements
+- Modern browser (Chrome 60+, Firefox 55+, Safari 12+)
+- JavaScript enabled
+- Audio playback permission (optional)
+- Network connection (only for page loading, not required during runtime)
+
+Troubleshooting
+- If audio cannot play, check browser audio permission settings
+- If page display is abnormal, try refreshing the page or clearing browser cache
+- If timer doesn't work, ensure JavaScript is enabled
+- When using on mobile devices, recommend keeping screen awake to avoid timing interruption

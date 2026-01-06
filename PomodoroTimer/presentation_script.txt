@@ -1,0 +1,107 @@
+番茄钟应用演示稿件 - 3分钟中英双语演示
+Pomodoro Timer Application Presentation Script - 3-Minute Bilingual Demo
+
+=================================================================
+
+【第一分钟 - First Minute】
+
+【问候 - Greeting】
+大家好！今天我将为大家演示一个番茄钟应用程序。
+Hello everyone! Today I will demonstrate a Pomodoro Timer application for you.
+
+【项目介绍 - Project Introduction】
+这是一个功能完整的番茄钟应用，帮助用户通过番茄工作法提高工作效率。应用采用经典的工作25分钟、休息5分钟的模式，支持任务管理、进度跟踪和个性化设置。
+This is a fully functional Pomodoro Timer application that helps users improve work efficiency through the Pomodoro Technique. The application adopts the classic 25-minute work and 5-minute rest mode, supporting task management, progress tracking, and personalized settings.
+
+【演示设置功能 - Demonstrate Settings Function】
+现在让我演示设置功能。点击右上角的设置按钮。
+Now let me demonstrate the settings function. Click the settings button in the top right corner.
+
+【时间单位说明 - Time Unit Explanation】
+请注意，在网站界面上显示的时间单位是分钟，但为了演示方便，我们实际使用秒作为单位。现在我将工作时间设置为3秒，休息时间设置为2秒。
+Please note that the time unit displayed on the website interface is minutes, but for demonstration convenience, we actually use seconds as the unit. Now I will set the work time to 3 seconds and the break time to 2 seconds.
+
+【操作演示 - Operation Demo】
+在这里我可以调整工作时间和休息时间。我把工作时间改为3，休息时间改为2。设置会自动保存。
+Here I can adjust the work time and rest time. I'll change the work time to 3 and rest time to 2. The settings are automatically saved.
+
+=================================================================
+
+【第二分钟 - Second Minute】
+
+【演示声音功能 - Demonstrate Sound Function】
+接下来演示声音功能。在设置面板中，我可以开启或关闭声音提醒和滴答声。
+Next, let me demonstrate the sound function. In the settings panel, I can enable or disable sound alerts and tick sounds.
+
+【演示夜间模式 - Demonstrate Dark Mode】
+现在演示夜间模式功能。点击右上角的月亮图标可以切换到夜间模式，点击太阳图标可以切换回日间模式。模式偏好会自动保存。
+Now let me demonstrate the dark mode function. Click the moon icon in the top right corner to switch to dark mode, and click the sun icon to switch back to day mode. Mode preferences are automatically saved.
+
+【演示任务创建 - Demonstrate Task Creation】
+现在我来创建一个任务。在输入框中输入任务名称，比如"学习JavaScript"，设置番茄钟数量为1个，然后点击"Add Mission"。
+Now I'll create a task. Enter the task name in the input field, such as "Learn JavaScript", set the number of Pomodoros to 1, then click "Add Mission".
+
+【演示计时功能 - Demonstrate Timer Function】
+点击开始按钮开始计时。可以看到倒计时开始，页面标题也显示剩余时间。
+Click the start button to begin timing. You can see the countdown starts, and the page title also shows the remaining time.
+
+【演示任务操作 - Demonstrate Task Operations】
+在计时过程中，我可以：
+- 暂停任务：点击暂停按钮
+- 继续任务：再次点击开始按钮
+- 停止任务：点击停止按钮
+- 提前完成任务：点击完成按钮
+- 取消任务：点击删除按钮
+
+During timing, I can:
+- Pause task: Click the pause button
+- Resume task: Click the start button again
+- Stop task: Click the stop button
+- Complete task early: Click the complete button
+- Cancel task: Click the delete button
+
+【演示完整周期 - Demonstrate Complete Cycle】
+让我演示一个完整的工作周期。3秒后工作时间结束，会播放提示音并自动切换到2秒的休息时间。
+Let me demonstrate a complete work cycle. After 3 seconds, the work time ends, a notification sound plays, and it automatically switches to a 2-second rest time.
+
+=================================================================
+
+【第三分钟 - Third Minute】
+
+【演示任务持久化问题 - Demonstrate Task Persistence Issue】
+现在我来演示任务持久化功能。
+Now let me demonstrate the task persistence function. 
+
+【刷新页面测试 - Page Refresh Test】
+现在我刷新页面来测试数据保存功能。
+Now I'll refresh the page to test the data saving function.
+
+【问题说明 - Issue Explanation】
+如您所见，任务数据可以成功保存，但任务的运行状态无法保存。这是我们在开发过程中遇到的主要技术问题。
+As you can see, the task data can be successfully saved, but the running state of tasks cannot be saved. This is the main technical issue we encountered during development.
+
+【技术问题分析 - Technical Issue Analysis】
+我们尝试了多种解决方案来修复这个问题，包括：
+- 修复变量作用域冲突
+- 改进数据序列化方法
+- 优化页面加载时序
+- 增强错误处理机制
+
+We tried multiple solutions to fix this issue, including:
+- Fixing variable scope conflicts
+- Improving data serialization methods
+- Optimizing page loading timing
+- Enhancing error handling mechanisms
+
+
+【总结 - Summary】
+总的来说，这个番茄钟应用具有完整的核心功能，虽然任务持久化存在部分问题，但应用的基本功能完全可用。我们在用户报告和开发者报告中提供了详尽的使用说明和技术文档。
+
+In summary, this Pomodoro Timer application has complete core functionality. Although there are some issues with task persistence, the basic functions of the application are fully usable. We have provided detailed usage instructions and technical documentation in both user and developer reports.
+
+【感谢 - Thanks】
+感谢大家的聆听！如果有任何问题，欢迎查看我们的详细报告文档。
+Thank you for listening! If you have any questions, please feel free to check our detailed report documentation.
+
+=================================================================
+

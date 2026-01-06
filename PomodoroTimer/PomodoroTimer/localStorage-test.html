@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localStorage 测试</title>
+</head>
+<body>
+    <h1>localStorage 测试</h1>
+    <button onclick="saveTest()">保存测试数据</button>
+    <button onclick="loadTest()">加载测试数据</button>
+    <button onclick="clearTest()">清除测试数据</button>
+    <div id="result"></div>
+
+    <script>
+        function saveTest() {
+            try {
+                localStorage.setItem('testKey', 'testValue');
+                document.getElementById('result').innerHTML = '✅ 数据保存成功';
+                console.log('数据保存成功');
+            } catch (error) {
+                document.getElementById('result').innerHTML = '❌ 数据保存失败: ' + error.message;
+                console.error('数据保存失败:', error);
+            }
+        }
+
+        function loadTest() {
+            try {
+                var value = localStorage.getItem('testKey');
+                if (value) {
+                    document.getElementById('result').innerHTML = '✅ 数据加载成功: ' + value;
+                    console.log('数据加载成功:', value);
+                } else {
+                    document.getElementById('result').innerHTML = '⚠️ 没有找到数据';
+                    console.log('没有找到数据');
+                }
+            } catch (error) {
+                document.getElementById('result').innerHTML = '❌ 数据加载失败: ' + error.message;
+                console.error('数据加载失败:', error);
+            }
+        }
+
+        function clearTest() {
+            try {
+                localStorage.removeItem('testKey');
+                document.getElementById('result').innerHTML = '✅ 数据清除成功';
+                console.log('数据清除成功');
+            } catch (error) {
+                document.getElementById('result').innerHTML = '❌ 数据清除失败: ' + error.message;
+                console.error('数据清除失败:', error);
+            }
+        }
+
+        // 页面加载时自动测试
+        window.onload = function() {
+            console.log('localStorage 支持:', typeof(Storage) !== "undefined");
+            console.log('当前协议:', window.location.protocol);
+            loadTest();
+        };
+    </script>
+</body>
+</html>

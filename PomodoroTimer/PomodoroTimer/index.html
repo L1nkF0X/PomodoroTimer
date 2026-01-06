@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pomodoro Timer</title>
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+</head>
+<body>
+	<!-- 导航栏 -->
+	<div class="nav" id="nav">
+		<div class="nav-left"><span class="nav-button"><a class="on" href="javascript:;">Tasks</a></span></div>
+		<div class="nav-right">
+			<ul>
+				<li><span class="nav-button"><a href="javascript:;">Settings</a></span></li>
+				<li><span class="nav-button"><a href="javascript:;" id="night-mode-toggle">🌙</a></span></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 导航栏结束 -->
+
+	<!-- 主面板 -->
+	<div class="panle" id="panle">
+
+		<!-- 任务界面 -->
+		<div id="main">
+			<h1>Pomodoro Timer</h1>
+			<p>Add pomodoro sessions to start your study and work today!</p>
+			<div class="button" id="newMission-btn"><span>🍅 New Pomodoro</span></div>
+			<div id="addMission" class="noClick">
+				<div class="addMission-nav">
+					<div class="addMission-nav-title">Add New Pomodoro</div>
+					<div class="addMission-nav-close" id="addMission-nav-close">x</div>
+				</div>
+				<div class="addMission-main">
+					<div class="addMission-main-1">
+						<label for="missionName">Task Name:</label>
+						<input type="text" id="missionName" placeholder="My Pomodoro Task">
+					</div>
+					<div class="addMission-main-1">
+						<label for="missionName">Estimated Pomodoros: <strong id="missionCount">1</strong></label>
+						<span class="addMission-main-button">
+							<span class="addMission-main-button-sub" id="addMission-main-button-sub">-</span>
+							<span class="addMission-main-button-add" id="addMission-main-button-add">+</span>
+						</span>
+					</div>
+					<div class="addMission-main-1">
+						<ul>
+							<li>Total Time:</li>
+							<li>Work Time:</li>
+							<li>Break Time:</li>
+						</ul>
+						<ul>
+							<li id="li-totalTime"></li>
+							<li id="li-missionTime"></li>
+							<li id="li-restTime"></li>
+						</ul>
+					</div>
+					
+				</div>
+				<div class="addMission-foot">
+					<span class="addMission-foot-button">
+						<span class="addMission-foot-button-cancel" id="addMission-foot-button-cancel">Cancel</span>
+						<span class="addMission-foot-button-confirm" id="addMission-foot-button-confirm">Confirm</span>
+					</span>
+				</div>
+			</div>
+		</div>
+		<!-- 任务界面结束 -->
+
+		<!-- 设置界面 -->
+		<div id="set" class="hidden">
+			<div class="menu">
+				<ul>
+					<li><div class="button on"><span>Basic Settings</span></div></li>
+					<li><div class="button"><span>Sound Settings</span></div></li>
+				</ul>
+			</div>
+			<div class="menu-set" id="menu-set">
+				<div id="base">
+					<ul class="menu-set-item">
+						<li>Pomodoro duration (1-59 minutes)</li>
+						<li>Short break duration (1-20 minutes)</li>
+					</ul>
+					<ul class="menu-set-radio">
+						<li><input class="text" type="text" placeholder="25" /></li>
+						<li><input class="text" type="text" placeholder="5" /></li>
+					</ul>
+				</div>
+				<div id="sound" class="hidden">
+					<ul class="menu-set-item">
+						<li>Sound Notification</li>
+						<li>Tick Sound</li>
+					</ul>
+					<ul class="menu-set-radio">
+						<li>
+							<div class="radio">
+								<ul class="radio-ul">
+									<li class="radio-on">ON</li>
+									<li></li>
+									<li class="radio-off">OFF</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="radio">
+								<ul class="radio-ul">
+									<li class="radio-on">ON</li>
+									<li></li>
+									<li class="radio-off">OFF</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 设置界面结束 -->
+
+	</div>
+	<!-- 主面板结束 -->
+	<script type="text/javascript" src="js/global.js"></script>
+</body>
+</html>

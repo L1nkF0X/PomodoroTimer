@@ -1,0 +1,870 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: "幼圆", sans-serif;
+	-moz-user-select:none;
+	-webkit-user-select:none;
+	-ms-user-select:none;
+	-khtml-user-select:none;
+}
+
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.hidden {
+	display: none;
+}
+
+.nav {
+	background-color: #222222;
+	border-bottom: 1px solid #080808;
+	height: 50px;
+	width: 100%;
+	font-size: 23px;
+	font-weight: 100;
+	position: relative;
+	-moz-user-select:none;
+	-webkit-user-select:none;
+	-ms-user-select:none;
+	-khtml-user-select:none;
+}
+
+.nav a {
+	color: #979595;
+}
+
+.nav a:hover {
+	color: #FFF;
+}
+
+.nav .on {
+	color: #FFF;
+	cursor: default;
+}
+
+
+.nav-left, .nav-right {
+	position: absolute;
+	top: 12px;
+}
+
+.nav-left {
+	left: 150px;
+}
+
+.nav-right {
+	right: 90px;
+}
+
+.nav-right ul li {
+	float: left;
+	padding-right: 30px;
+	margin-right: 10px;
+}
+
+.nav-right ul li:last-child {
+	padding-right: 0;
+	margin-right: 0;
+}
+
+.panle {
+	width: 100%;
+	position: relative;
+}
+
+#main {
+	width: 600px;
+	margin: 0px auto;
+	text-align: center;
+	z-index: auto;
+}
+
+#main h1 {
+	font-size: 70px;
+	font-weight: 100;
+	padding-top: 120px;
+}
+
+#main p {
+	margin-top: 30px;
+}
+
+.button {
+	width: 170px;
+	height: 45px;
+	background: #69B2F1;
+	border-radius: 4px;
+	color: #FFF;
+	cursor: pointer;
+}
+
+#main .button {
+	margin: 30px auto; 
+	cursor: pointer;
+}
+
+#main .button span {
+	display: block;
+	width: 100%;
+	height: 45px;
+	margin: 0 auto;
+	font-size: 17px;
+	line-height: 45px;
+	text-align: center;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+
+#main .button:hover {
+	background-color: #3276B1;
+}
+
+#main .noClick {
+	display: none;
+}
+
+#addMission {
+	border-radius: 5px;
+	border: 1px solid #000;
+	box-shadow: 0 0 30px #000;
+	position: absolute;
+	width: 600px;
+	height: 350px;
+	top: 120px;
+	background-color: #FFF;
+}
+
+#addMission .addMission-nav {
+	border-bottom: 1px solid #E5E5E5;
+	height: 55px;
+	line-height: 55px;
+}
+
+#addMission .addMission-nav .addMission-nav-title {
+	display: inline-block;
+	font-size: 20px;
+}
+
+#addMission .addMission-nav .addMission-nav-close {
+	position: absolute;
+	display: inline-block;
+	right: 20px;
+	font-size: 20px;
+	color: #C5C2C2;
+	cursor: pointer;
+}
+
+#addMission .addMission-nav .addMission-nav-close:hover {
+	color: #808080;
+}
+
+#addMission .addMission-main {
+	height: 215px;
+	padding-top: 30px;
+	padding-left: 80px;
+	text-align: left;
+}
+
+#addMission .addMission-main .addMission-main-1 {
+	margin-bottom: 30px;
+}
+
+#addMission .addMission-main label {
+	font-size: 22px;
+	line-height: 25px;
+}
+
+#addMission .addMission-main input {
+	width: 220px;
+	height: 24px;
+	vertical-align: top;
+	border-radius: 4px;
+	border: 1px solid #CCCCCC;
+}
+
+#addMission .addMission-main .addMission-main-button {
+	position: absolute;
+	left: 420px;
+}
+
+#addMission .addMission-main .addMission-main-button-sub, #addMission .addMission-main .addMission-main-button-add {
+	color: #FFF;
+	font-weight: bolder;
+	height: 30px;
+	width: 40px;
+	border-radius: 4px;
+	display: inline-block;
+	margin: 0 5px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 22px;
+	cursor: pointer;
+}
+
+#addMission .addMission-main .addMission-main-button-sub {
+	background-color: #D9534F;
+}
+
+#addMission .addMission-main .addMission-main-button-sub:hover {
+	background-color: #D2322D;
+}
+
+#addMission .addMission-main .addMission-main-button-add {
+	background-color: #428BCA;
+}
+
+#addMission .addMission-main .addMission-main-button-add:hover {
+	background-color: #3276B1;
+}
+
+#addMission .addMission-main ul {
+	display: block;
+	height: 20px;
+	width: 520px;
+}
+
+#addMission .addMission-main ul li {
+	float: left;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	width: 150px;
+	height: 30px;
+}
+
+#addMission .addMission-foot .addMission-foot-button {
+	display: block;
+	height: 48px;
+	line-height: 48px;
+	border-top: 1px solid #E5E5E5;
+	width: 600px;
+}
+
+#addMission .addMission-foot .addMission-foot-button-cancel, #addMission .addMission-foot .addMission-foot-button-confirm {
+	height: 30px;
+	width: 60px;
+	border-radius: 4px;
+	display: inline-block;
+	margin: 0 10px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+#addMission .addMission-foot .addMission-foot-button-cancel {
+	border: 1px solid #CCCCCC;
+}
+
+#addMission .addMission-foot .addMission-foot-button-cancel:hover {
+	background-color: #EBEBEB;
+}
+
+#addMission .addMission-foot .addMission-foot-button-confirm  {
+	background-color: #428BCA;
+	color: #FFF;
+}
+
+#addMission .addMission-foot .addMission-foot-button-confirm:hover {
+	background-color: #3276B1;
+}
+
+#main #missionList li {
+	margin-top: 20px;
+	border-bottom: 1px solid #DDDDDD;
+	height: 18px;
+	line-height: 18px;
+	padding-bottom: 5px;
+}
+
+#main #missionList li strong {
+	float: left;
+	display: inline-block;
+	margin-left: 50px;
+}
+
+#main #missionList li div {
+	float: right;
+	margin-right: 50px;
+}
+
+#main #missionList li span {
+	width: 19px;
+	height: 19px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#main #missionList li span a {
+	cursor: pointer;
+}
+
+#main #missionList li span a:hover {
+	text-decoration: underline;
+}
+
+#main #missionList li .span1 {
+	display: inline-block;
+	width: 38px;
+	height: 18px;
+	line-height: 18px;
+	border-radius: 5px;
+	color: #3C763D;
+	background-color: #DFF0D8;
+	cursor: default;
+}
+
+#main #missionList li .span2 {
+	color: #428BCA;
+}
+
+#main #missionList li .span2:hover {
+	color: #2A6496;
+}
+
+#main #missionList li .span4, #main #missionList li .span5, #main #missionList li .span6, #main #missionList li .span7 {
+	display: none;
+	width: 102px;
+	height: 19px;
+	line-height: 19px;
+	cursor: default;
+	font-weight: bolder;
+}
+
+#main #missionList li .span3 {
+	color: #F4606C;
+}
+
+#main #missionList li .span4 {
+	color: #8CC7B5;
+}
+
+#main #missionList li .span5 {
+	color: #F4606C;
+}
+
+#main #missionList li .span6 {
+	color: #8CC7B5;
+}
+
+#main #missionList li .span7 {
+	color: #428BCA;
+}
+
+#missionList {
+	margin-bottom: 30px;
+}
+
+#set {
+	width: 600px;
+    margin: 0px auto;
+    position: relative;
+}
+
+#set .menu {
+	width: 130px;
+	height: 220px;
+	padding-top: 120px;
+}
+
+#set .menu ul li {
+	padding-bottom: 8px;
+	text-align: center;
+}
+
+#set .menu ul li .button {
+	width: 120px;
+	height: 40px;
+	background-color: #FFF;
+	color: #428BCA;
+	font-size: 14px;
+}
+
+#set .menu ul li .button:hover {
+	background-color: #EEEEEE;
+	color: #2A6496;
+}
+
+#set .menu ul li .on {
+	background-color: #428BCA;
+	color: #FFF;
+}
+
+#set .menu ul li .button span {
+	padding-top: 7px;
+	display: block;
+}
+
+#set .menu-set {
+	position: absolute;
+	width: 450px;
+	top: 0px;
+	left: 140px;
+	padding-top: 120px;
+}
+
+#set .menu-set ul {
+	float: left;
+}
+
+#set .menu-set .menu-set-item {
+	width: 250px;
+}
+
+#set .menu-set .menu-set-item li {
+	padding-bottom: 25px;
+	line-height: 22px;
+	display: flex;
+	align-items: center;
+	height: 22px;
+	margin-bottom: 3px;
+}
+
+#set .menu-set .menu-set-radio {
+	width: 180px;
+	height: 234px;
+}
+
+#set .menu-set .menu-set-radio li {
+	margin-bottom: 25px;
+	display: flex;
+	align-items: center;
+	height: 22px;
+	padding-bottom: 3px;
+}
+
+.radio {
+	border: 1px solid #CCCCCC;
+	width: 70px;
+	height: 20px;
+	border-radius: 4px;
+	overflow: hidden;
+	cursor: pointer;
+	margin-left: 50px;
+	position: relative;
+	color: #FFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.radio ul {
+	width: 120px;
+	height: 20px;
+	position: absolute;
+}
+
+.radio ul li {
+	float: left;
+	width: 40px;
+	text-align: center;
+
+}
+
+.radio-on {
+	border-radius: 4px;
+	background-color: #428BCA;
+	height: 20px;
+}
+
+.radio-off {
+	border-radius: 4px;
+	background-color: #EEEEEE;
+	height: 20px;
+}
+
+.text {
+	margin-left: 50px;
+	height: 20px;
+	width: 40px;
+	border-radius: 5px;
+	border: 1px solid #CCCCCC;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 20px;
+	text-align: center;
+}
+
+#set .menu-set #sound .menu-set-item {
+	width: 100px;
+}
+
+#set .menu-set #sound .menu-set-radio {
+	width: 380px;
+}
+
+#set .menu-set #sound .menu-set-radio li {
+	position: relative;
+	height: 22px;
+	margin-bottom: 25px;
+	display: flex;
+	align-items: center;
+	padding-bottom: 3px;
+}
+
+#set .menu-set #sound .filename {
+	display: flex;
+	align-items: center;
+	width: 180px;
+	height: 22px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 22px;
+	margin-right: 10px;
+}
+
+#set .menu-set #sound .file {
+	width: 68px;
+	height: 22px;
+	position: absolute;
+	opacity: 0;
+	/* filter:alpha(opacity=0); */ /* IE8及更早版本 */
+	left: 190px;
+	cursor: pointer;
+	z-index: 10;
+}
+
+#set .menu-set #sound .button-file {
+	border-radius: 4px;
+	border: 1px solid #CCCCCC;
+	width: 66px;
+	height: 20px;
+	background-color: #428BCA;
+	color: #FFF;
+	cursor: pointer;
+	z-index: 100;
+	line-height: 20px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 5px;
+}
+
+#set .menu-set #sound .button-file:hover {
+	background-color: #3276B1;
+}
+
+#set .menu-set #sound .button-default {
+	border-radius: 4px;
+	border: 1px solid #CCCCCC;
+	width: 66px;
+	height: 20px;
+	cursor: pointer;
+	text-align: center;
+	line-height: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#set .menu-set #sound .button-default:hover {
+	background-color: #EBEBEB;
+}
+
+#sound .file {
+	cursor: pointer;
+}
+
+#set .menu-set #layout .menu-set-item {
+	width: 150px;
+}
+
+#set .menu-set #layout .menu-set-radio {
+	width: 330px;
+}
+
+#set .menu-set #layout .menu-set-radio .longButton {
+	border-radius: 4px;
+	border: 1px solid #CCCCCC;
+	width: 148px;
+	height: 22px;
+	background-color: #428BCA;
+	cursor: pointer;
+}
+
+#set .menu-set #layout .menu-set-radio .longButton .border {
+	border-right: 1px solid #285E8E;
+}
+
+#set .menu-set #layout .menu-set-radio .longButton .on {
+	background-color: #10416C;
+}
+
+#set .menu-set #layout .menu-set-radio .longButton ul li {
+	float: left;
+	text-align: center;
+	padding-left: 4px;
+	margin: 0px;
+	height: 22px;
+	line-height: 22px;
+	color: #FFF;
+}
+
+#set .menu-set #layout .menu-set-radio .longButton ul li:hover {
+	background-color: #10416C;
+}
+
+#set .menu-set #desktop .menu-set-item {
+	width: 100px;
+}
+
+#set .menu-set #desktop .menu-set-radio {
+	width: 380px;
+}
+
+#set .menu-set #other .menu-set-item {
+	width: 100px;
+	height: 25px;
+}
+
+#set .menu-set #other .menu-set-radio {
+	width: 380px;
+	height: 25px;
+	margin-bottom: 20px;
+}
+
+#set .menu-set #other .comment {
+	font-size: 12px;
+}
+
+/* 夜间模式样式 */
+body.night-mode {
+	background-color: #1a1a1a;
+	color: #e0e0e0;
+}
+
+body.night-mode .nav {
+	background-color: #0d1117;
+	border-bottom: 1px solid #30363d;
+}
+
+body.night-mode .nav a {
+	color: #8b949e;
+}
+
+body.night-mode .nav a:hover {
+	color: #f0f6fc;
+}
+
+body.night-mode .nav .on {
+	color: #f0f6fc;
+}
+
+body.night-mode #main h1 {
+	color: #f0f6fc;
+}
+
+body.night-mode #main p {
+	color: #8b949e;
+}
+
+body.night-mode .button {
+	background: #238636;
+	color: #f0f6fc;
+}
+
+body.night-mode .button:hover {
+	background-color: #2ea043;
+}
+
+body.night-mode #addMission {
+	background-color: #21262d;
+	border: 1px solid #30363d;
+	box-shadow: 0 0 30px #000;
+}
+
+body.night-mode #addMission .addMission-nav {
+	border-bottom: 1px solid #30363d;
+}
+
+body.night-mode #addMission .addMission-nav .addMission-nav-title {
+	color: #f0f6fc;
+}
+
+body.night-mode #addMission .addMission-nav .addMission-nav-close {
+	color: #8b949e;
+}
+
+body.night-mode #addMission .addMission-nav .addMission-nav-close:hover {
+	color: #f0f6fc;
+}
+
+body.night-mode #addMission .addMission-main label {
+	color: #f0f6fc;
+}
+
+body.night-mode #addMission .addMission-main input {
+	background-color: #0d1117;
+	border: 1px solid #30363d;
+	color: #f0f6fc;
+}
+
+body.night-mode #addMission .addMission-main input::placeholder {
+	color: #8b949e;
+}
+
+body.night-mode #addMission .addMission-main .addMission-main-button-sub {
+	background-color: #da3633;
+}
+
+body.night-mode #addMission .addMission-main .addMission-main-button-sub:hover {
+	background-color: #f85149;
+}
+
+body.night-mode #addMission .addMission-main .addMission-main-button-add {
+	background-color: #238636;
+}
+
+body.night-mode #addMission .addMission-main .addMission-main-button-add:hover {
+	background-color: #2ea043;
+}
+
+body.night-mode #addMission .addMission-foot .addMission-foot-button {
+	border-top: 1px solid #30363d;
+}
+
+body.night-mode #addMission .addMission-foot .addMission-foot-button-cancel {
+	border: 1px solid #30363d;
+	color: #f0f6fc;
+}
+
+body.night-mode #addMission .addMission-foot .addMission-foot-button-cancel:hover {
+	background-color: #30363d;
+}
+
+body.night-mode #addMission .addMission-foot .addMission-foot-button-confirm {
+	background-color: #238636;
+}
+
+body.night-mode #addMission .addMission-foot .addMission-foot-button-confirm:hover {
+	background-color: #2ea043;
+}
+
+body.night-mode #main #missionList li {
+	border-bottom: 1px solid #30363d;
+	color: #f0f6fc;
+}
+
+body.night-mode #main #missionList li .span1 {
+	color: #2ea043;
+	background-color: #1a2f1a;
+}
+
+body.night-mode #main #missionList li .span2 {
+	color: #58a6ff;
+}
+
+body.night-mode #main #missionList li .span2:hover {
+	color: #79c0ff;
+}
+
+body.night-mode #main #missionList li .span3 {
+	color: #f85149;
+}
+
+body.night-mode #main #missionList li .span4 {
+	color: #56d364;
+}
+
+body.night-mode #main #missionList li .span5 {
+	color: #f85149;
+}
+
+body.night-mode #main #missionList li .span6 {
+	color: #56d364;
+}
+
+body.night-mode #main #missionList li .span7 {
+	color: #58a6ff;
+}
+
+body.night-mode #set .menu ul li .button {
+	background-color: #21262d;
+	color: #58a6ff;
+	border: 1px solid #30363d;
+}
+
+body.night-mode #set .menu ul li .button:hover {
+	background-color: #30363d;
+	color: #79c0ff;
+}
+
+body.night-mode #set .menu ul li .on {
+	background-color: #238636;
+	color: #f0f6fc;
+}
+
+body.night-mode #set .menu-set .menu-set-item li {
+	color: #f0f6fc;
+}
+
+body.night-mode .radio {
+	border: 1px solid #30363d;
+}
+
+body.night-mode .radio-on {
+	background-color: #238636;
+}
+
+body.night-mode .radio-off {
+	background-color: #30363d;
+}
+
+body.night-mode .text {
+	background-color: #0d1117;
+	border: 1px solid #30363d;
+	color: #f0f6fc;
+}
+
+body.night-mode #set .menu-set #sound .button-file {
+	background-color: #238636;
+}
+
+body.night-mode #set .menu-set #sound .button-file:hover {
+	background-color: #2ea043;
+}
+
+body.night-mode #set .menu-set #sound .button-default {
+	border: 1px solid #30363d;
+	color: #f0f6fc;
+}
+
+body.night-mode #set .menu-set #sound .button-default:hover {
+	background-color: #30363d;
+}
+
+body.night-mode #set .menu-set #layout .menu-set-radio .longButton {
+	background-color: #238636;
+	border: 1px solid #30363d;
+}
+
+body.night-mode #set .menu-set #layout .menu-set-radio .longButton .border {
+	border-right: 1px solid #2ea043;
+}
+
+body.night-mode #set .menu-set #layout .menu-set-radio .longButton .on {
+	background-color: #1a2f1a;
+}
+
+/* 夜间模式切换按钮样式 */
+#night-mode-toggle {
+	font-size: 20px !important;
+	transition: transform 0.3s ease;
+}
+
+#night-mode-toggle:hover {
+	transform: scale(1.2);
+}
+
+body.night-mode #night-mode-toggle {
+	color: #ffd700 !important;
+}
